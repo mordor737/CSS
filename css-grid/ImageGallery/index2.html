@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset.css" />
+    <title>Starter Files and Tooling Setup!</title>
+  </head>
+
+  <style>
+    p {
+      font-size: 50px;
+      border-bottom: 10px solid var(--yellow);
+      color: var(--black);
+    }
+  </style>
+
+  <body>
+    <!-- .item.item${$}*30-->
+    <div class="container">
+      <div class="item item1">header</div>
+      <div class="item item2">Side Bar</div>
+      <div class="item item3">content</div>
+      <div class="item item4">Footer</div>
+    </div>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2px;
+      }
+      .item1 {
+        background: var(--black);
+        color: var(--yellow);
+        grid-column: 1 / -1;
+      }
+      .item2 {
+        background: gray;
+        color: var(--yellow);
+        grid-column: 1/2;
+        grid-row: span 269;
+      }
+      .item3 {
+        grid-column: 2/6;
+        grid-row: span 269;
+      }
+      .item4 {
+        grid-column: 1/-1;
+        background: var(--black);
+        color: var(--yellow);
+      }
+    </style>
+  </body>
+</html>
